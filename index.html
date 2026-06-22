@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PAGARSLOT X NASTARTOTO</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#111827;
+    color:#fff;
+    padding:20px;
+}
+
+.container{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    max-width:1000px;
+    margin:auto;
+}
+
+.shift{
+    flex:1;
+    min-width:320px;
+    background:#1f2937;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 0 15px rgba(0,0,0,.3);
+}
+
+.shift h2{
+    text-align:center;
+    margin-bottom:15px;
+}
+
+.pagi h2{
+    color:#fbbf24;
+}
+
+.malam h2{
+    color:#60a5fa;
+}
+
+.task{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:#374151;
+    padding:12px;
+    border-radius:10px;
+    margin-bottom:8px;
+    cursor:pointer;
+}
+
+.task input{
+    width:18px;
+    height:18px;
+}
+
+.progress{
+    width:100%;
+    height:20px;
+    background:#374151;
+    border-radius:50px;
+    overflow:hidden;
+    margin-top:15px;
+}
+
+.bar{
+    height:100%;
+    width:0%;
+    transition:.3s ease;
+}
+
+#barPagi{
+    background:linear-gradient(90deg,#f59e0b,#fbbf24);
+}
+
+#barMalam{
+    background:linear-gradient(90deg,#2563eb,#60a5fa);
+}
+
+.status{
+    text-align:center;
+    margin-top:10px;
+    font-weight:bold;
+    font-size:15px;
+}
+
+.btn-reset{
+    width:100%;
+    margin-top:15px;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    color:#fff;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.btn-pagi{
+    background:#d97706;
+}
+
+.btn-malam{
+    background:#2563eb;
+}
+
+.btn-reset:hover{
+    opacity:.9;
+}
+
+.catatan-box{
+    margin-top:15px;
+}
+
+.catatan-box label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+    color:#d1d5db;
+}
+
+.catatan-box textarea{
+    width:100%;
+    min-height:100px;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    resize:vertical;
+    background:#374151;
+    color:#fff;
+    font-size:14px;
+}
+
+.catatan-box textarea:focus{
+    outline:none;
+    box-shadow:0 0 0 2px rgba(255,255,255,.15);
+}
+</style>
+</head>
+<body>
+<div style="
+max-width:1000px;
+margin:0 auto 20px;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+">
+
+    <img src="https://i.postimg.cc/VLmmTJ4w/pagar.png"
+         alt="PAGARSLOT"
+         style="height:80px;max-width:250px;object-fit:contain;">
+
+    <div style="
+    font-size:30px;
+    font-weight:bold;
+    color:#fff;
+    ">
+        ×
+    </div>
+
+    <img src="https://i.postimg.cc/wxC0kZcd/logo.png"
+         alt="NASTARTOTO"
+         style="height:80px;max-width:250px;object-fit:contain;">
+
+</div>
+
+<div class="container">
+
+    <!-- SHIFT PAGI -->
+    <div class="shift pagi">
+        <h2>🌞 SHIFT PAGI</h2>
+
+        <label class="task"><input type="checkbox" class="pagi-check"> LINK</label>
+        <label class="task"><input type="checkbox" class="pagi-check"> NEWBIE</label>
+        <label class="task"><input type="checkbox" class="pagi-check"> POSTINGAN</label>
+        <label class="task"><input type="checkbox" class="pagi-check"> FOTO PULSA</label>
+        
+
+        <div class="progress">
+            <div class="bar" id="barPagi"></div>
+        </div>
+
+        <div class="status" id="statusPagi">0% Selesai</div>
+        
+        <div class="catatan-box">
+            <label>📝 Catatan Shift Pagi</label>
+            <textarea id="catatanPagi" placeholder="Tulis catatan shift pagi di sini..."></textarea>
+        </div>
+
+
+        <button class="btn-reset btn-pagi" onclick="resetPagi()">
+            🔄 Reset
+        </button>
+    </div>
+
+    <!-- SHIFT MALAM -->
+    <div class="shift malam">
+        <h2>🌙 SHIFT MALAM</h2>
+
+                
+        <label class="task"><input type="checkbox" class="malam-check"> QRIS</label>
+        <label class="task"><input type="checkbox" class="malam-check"> BNS</label>
+        <label class="task"><input type="checkbox" class="malam-check"> BUAT DOC</label>
+        <label class="task"><input type="checkbox" class="malam-check"> COPYBANK</label>
+        <label class="task"><input type="checkbox" class="malam-check"> FOTO WALLET</label>
+        <label class="task"><input type="checkbox" class="malam-check"> LAPOR PULSA</label>
+        <label class="task"><input type="checkbox" class="malam-check"> UPDATE PREDIKSI</label>
+        <label class="task"><input type="checkbox" class="malam-check"> POSTINGAN</label>
+        <label class="task"><input type="checkbox" class="malam-check"> MASA AKTIF</label>
+        <label class="task"><input type="checkbox" class="malam-check"> LINK</label>
+
+        <div class="progress">
+            <div class="bar" id="barMalam"></div>
+        </div>
+
+        <div class="status" id="statusMalam">0% Selesai</div>
+      
+        <div class="catatan-box">
+            <label>📝 Catatan Shift Malam</label>
+            <textarea id="catatanMalam" placeholder="Tulis catatan shift malam di sini..."></textarea>
+            </div>
+       
+        <button class="btn-reset btn-malam" onclick="resetMalam()">
+            🔄 Reset
+        </button>
+    </div>
+
+</div>
+</div>
+
+<!-- LOG HARIAN -->
+<div class="shift" style="
+max-width:1000px;
+margin:20px auto;
+width:100%;
+">
+
+    <h2 style="color:#22c55e;">📋 LOG HARIAN</h2>
+
+    <input type="date"
+           id="tanggalLog"
+           style="
+           width:100%;
+           padding:12px;
+           border:none;
+           border-radius:10px;
+           margin-bottom:10px;
+           background:#374151;
+           color:#fff;
+           ">
+
+    <textarea
+        id="logHarian"
+        placeholder="Masukkan aktivitas hari ini..."
+        style="
+        width:100%;
+        min-height:150px;
+        padding:12px;
+        border:none;
+        border-radius:10px;
+        background:#374151;
+        color:#fff;
+        resize:vertical;
+        "></textarea>
+
+    <button
+        onclick="kirimLog()"
+        class="btn-reset"
+        style="background:#16a34a;">
+
+        📤 Kirim ke Spreadsheet
+    </button>
+
+</div>
+<script>
+function updateProgress(className, barId, statusId){
+    const total = document.querySelectorAll("." + className).length;
+    const done = document.querySelectorAll("." + className + ":checked").length;
+    const percent = Math.round((done / total) * 100);
+
+    document.getElementById(barId).style.width = percent + "%";
+
+    if(percent === 100){
+        document.getElementById(statusId).innerHTML =
+            "✅ 100% Selesai";
+    }else{
+        document.getElementById(statusId).innerHTML =
+            "📈 " + percent + "% Selesai";
+    }
+}
+
+document.querySelectorAll(".pagi-check").forEach(item=>{
+    item.addEventListener("change",()=>{
+        updateProgress("pagi-check","barPagi","statusPagi");
+    });
+});
+
+document.querySelectorAll(".malam-check").forEach(item=>{
+    item.addEventListener("change",()=>{
+        updateProgress("malam-check","barMalam","statusMalam");
+    });
+});
+
+function resetPagi(){
+    if(confirm("Reset semua checklist Shift Pagi?")){
+        document.querySelectorAll(".pagi-check").forEach(item=>{
+            item.checked = false;
+        });
+        updateProgress("pagi-check","barPagi","statusPagi");
+    }
+}
+
+function resetMalam(){
+    if(confirm("Reset semua checklist Shift Malam?")){
+        document.querySelectorAll(".malam-check").forEach(item=>{
+            item.checked = false;
+        });
+        updateProgress("malam-check","barMalam","statusMalam");
+    }
+}
+
+const catatanPagi = document.getElementById("catatanPagi");
+const catatanMalam = document.getElementById("catatanMalam");
+
+catatanPagi.value = localStorage.getItem("catatanPagi") || "";
+catatanMalam.value = localStorage.getItem("catatanMalam") || "";
+
+catatanPagi.addEventListener("input", () => {
+    localStorage.setItem("catatanPagi", catatanPagi.value);
+});
+
+catatanMalam.addEventListener("input", () => {
+    localStorage.setItem("catatanMalam", catatanMalam.value);
+});
+
+async function kirimLog(){
+
+    const data = {
+        tanggal: document.getElementById("tanggalLog").value,
+
+        progressPagi:
+            document.querySelectorAll(".pagi-check:checked").length,
+
+        progressMalam:
+            document.querySelectorAll(".malam-check:checked").length,
+
+        catatanPagi: catatanPagi.value,
+
+        catatanMalam: catatanMalam.value,
+
+        logHarian:
+            document.getElementById("logHarian").value
+    };
+
+    try {
+
+        const response = await fetch(
+            "https://script.google.com/macros/s/AKfycbzWnltOvTKVfW1NZTDs_I5dbguevEhxj26qfq0f5PUndEKyWLihaM3vXcr1u59QQVKbWA/exec",
+            {
+                method: "POST",
+                body: JSON.stringify(data)
+            }
+        );
+
+        const hasil = await response.text();
+
+        console.log(hasil);
+
+        alert("✅ Data berhasil dikirim ke Spreadsheet!");
+
+    } catch(error) {
+
+        console.log(error);
+
+        alert("❌ Gagal mengirim data!");
+    }
+}
+</script>
+
+</body>
+</html>
