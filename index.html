@@ -366,20 +366,19 @@ async function kirimLog(){
 
     try {
 
-        const response = await fetch(
-            "https://script.google.com/macros/s/AKfycbzWnltOvTKVfW1NZTDs_I5dbguevEhxj26qfq0f5PUndEKyWLihaM3vXcr1u59QQVKbWA/exec",
-            {
-                method: "POST",
-                body: JSON.stringify(data)
-            }
-        );
+        await fetch(
+    "https://script.google.com/macros/s/AKfycbzWnltOvTKVfW1NZTDs_I5dbguevEhxj26qfq0f5PUndEKyWLihaM3vXcr1u59QQVKbWA/exec",
+    {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+            "Content-Type": "text/plain;charset=utf-8"
+        },
+        body: JSON.stringify(data)
+    }
+);
 
-        const hasil = await response.text();
-
-        console.log(hasil);
-
-        alert("✅ Data berhasil dikirim ke Spreadsheet!");
-
+alert("✅ Data berhasil dikirim!");
     } catch(error) {
 
         console.log(error);
